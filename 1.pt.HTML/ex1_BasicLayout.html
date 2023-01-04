@@ -8,20 +8,23 @@
 
   <style>
     .outer {
-      width: 80%;
+      width: 50%;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      border: 5px solid black;
+      box-shadow: 3px 3px #B0B0B0;
     }
 
     .row {
       display: flex;
       width: 100%;
     }
-
-    .col {
-      width: 25%;
+    
+    .row2col {
+      width: 25%; 
+      aspect-ratio: 1/2;
     }
     
   </style>
@@ -29,21 +32,22 @@
 <body>
   <!-- outer div -->
   <div class="outer">
+
     <!-- First row -->
-    <div class="row" style="height: 100px;">
-      <div class="col" style="background-color: #723740;"></div>
-      <div class="col" style="width: 75%; background-color: blue;"></div>
+    <div class="row">
+      <div class="col" style="background-color: #DB8181; width: 25%; aspect-ratio: 1/1;"></div>
+      <div class="col" style="width: 75%; background-color: #C6C6C6;"></div>
     </div>
 
     <!-- Second row -->
-    <div class="row" style="height: 200px;">
-      <div class="col">
-        <div style="height: 100px; background-color: pink;"></div>
-        <div style="height: 100px; background-color: #985035;"></div>
+    <div class="row">
+      <div class="row2col">
+        <div style=" background-color: #84CB79; aspect-ratio: 1/1;"></div>
+        <div style=" background-color: #976FD8; aspect-ratio: 1/1;"></div>
       </div>
-      <div class="col" style="background-color: #092341;"></div>
-      <div class="col" style="background-color: #113743;"></div>
-      <div class="col" style="background-color: #234823;"></div>
+      <div class="row2col" style="background-color: #799ACB;"></div>
+      <div class="row2col" style="background-color: #CB79AF;"></div>
+      <div class="row2col" style="background-color: #F87A7A;"></div>
     </div>
   </div>
 
