@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="text-2xl">
+  <div class="wrapper w-9/12 border m-auto mt-[100px] rounded-[20px]">
+    <h1 class="text-center font-bold mt-[20px]">To-do List with localStroage</h1>
+    <form action="">
+      <div class="flex justify-evenly bg-blue-100 w-[90%] m-auto my-[40px] p-[20px] rounded-[20px]">
+        <!-- task title -->
+        <div class="taskTitle">
+          <label for="taskTitle">Task Title</label><br>
+          <input class="rounded-md h-[40px]" type="text" id="taskTitle" name="taskTile" placeholder="  Title">
+        </div>
+        <!-- Assingee -->
+        <div class="assignee">
+          <label for="assignee">Assignee</label><br>
+          <input class="rounded-md h-[40px]" type="text" id="assignee" name="taskTile" placeholder="  your name">
+        </div>
+        <!-- Deadline -->
+        <div class="dateline">
+          <label for="dateline">Dateline</label><br>
+          <input class="rounded-md h-[40px]" type="date" id="dateline" name="dateline">
+        </div>
+        <!-- button -->
+        <div class="flex items-end">
+          <button class="rounded-full bg-[#0272B0] text-white px-[3rem] py-0 h-[40px]">
+            <div class="flex items-center space-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+              <p>Add</p>
+            </div>
+
+          </button>
+        </div>
+
+      </div>
+    </form>
+
+  </div>
+</body>
+
+</html>

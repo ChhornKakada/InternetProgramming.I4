@@ -1,0 +1,46 @@
+.container {
+  border: 2px solid black;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 960px;
+}
+
+input {
+  width: 90%;
+}
+
+.formInput {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: blue;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.divInput {
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1023px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .formInput {
+    display: block;
+  }
+
+  .divInput {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+button {
+  width: 90%;
+}
