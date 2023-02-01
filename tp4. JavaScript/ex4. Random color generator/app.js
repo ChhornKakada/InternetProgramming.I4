@@ -47,8 +47,8 @@ class Color {
 function rander(color) {
   recordColors.innerHTML += `
   <div class="flex justify-start gap-[5%] w-[26%] h-[1.8rem]">
-    <div class="w-[1.5rem] rounded-md h-[1.5rem] bg-[${color}]" id="${color}"
-      onclick="changeColor(this.id)"></div>
+    <div class="w-[1.5rem] rounded-md h-[1.5rem] bg-[${color}] active:shadow-[${color}] 
+      active:shadow-lg" id="${color}" onclick="changeColor(this.id)"></div>
     <div>
       <p>${color}</p>
     </div>
